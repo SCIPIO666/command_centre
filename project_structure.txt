@@ -1,0 +1,46 @@
+command-centre/
+│
+├── 📄 README.md                        # Main documentation
+├── 📄 QUICKSTART.md                    # 5-minute setup guide
+├── 📄 CUSTOMIZING.md                   # How to add your own projects
+├── 📄 TROUBLESHOOTING.md               # Common issues & fixes
+├── 📄 CHANGELOG.md                     # Version history
+├── 📄 LICENSE                          # MIT License
+├── 📄 .gitignore                       # Git ignore rules
+│
+├── 📂 src/                             # Core scripts
+│   ├── 📄 command_centre.ps1           # Main launcher (enhanced)
+│   ├── 📄 helpers/
+│   │   ├── 📄 Docker-Helper.ps1        # Docker utilities
+│   │   ├── 📄 Config-Validator.ps1     # Validates projects.json
+│   │   └── 📄 Logger.ps1               # Logging utilities
+│   └── 📄 install.ps1                  # First-time setup script
+│
+├── 📂 config/                          # Project configurations
+│   ├── 📄 projects.example.json        # Template with examples
+│   ├── 📄 projects.json                # Your actual config (gitignored)
+│   └── 📂 examples/
+│       ├── 📄 springhill.json          # Full-stack example
+│       ├── 📄 python-api.json          # Python/FastAPI example
+│       ├── 📄 dotnet-api.json          # .NET example
+│       └── 📄 static-site.json         # Frontend-only example
+│
+├── 📂 launchers/                       # Generated .bat files (per project)
+│   ├── 📄 SPRINGHILL_FULL.bat
+│   ├── 📄 SPRINGHILL_SERVICES.bat
+│   ├── 📄 SPRINGHILL_TERMINALS.bat
+│   ├── 📄 SPRINGHILL_DOCKER.bat
+│   ├── 📄 SPRINGHILL_NODOCKER.bat
+│   └── 📄 _TEMPLATE.bat
+│
+├── 📂 tools/                           # Utility scripts
+│   ├── 📄 new-project.ps1              # Scaffold a new project entry
+│   ├── 📄 list-projects.ps1            # List all configured projects
+│   ├── 📄 validate.ps1                 # Validate all configs
+│   └── 📄 generate-launchers.ps1       # Auto-generate .bat files
+│
+├── 📂 logs/                            # Runtime logs (gitignored)
+│   └── 📄 .gitkeep
+│
+└── 📂 tests/                           # Smoke tests
+    └── 📄 test-config.ps1

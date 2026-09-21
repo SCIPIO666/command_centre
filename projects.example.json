@@ -1,0 +1,67 @@
+{
+  "MYPROJECT": [
+    {
+      "name": "🐳 Docker services",
+      "path": "C:\\path\\to\\your\\project",
+      "cmd": "docker compose up",
+      "type": "service"
+    },
+    {
+      "name": "🧠 Backend API",
+      "path": "C:\\path\\to\\your\\project\\server",
+      "cmd": "npm run dev",
+      "type": "service"
+    },
+    {
+      "name": "🎨 Frontend",
+      "path": "C:\\path\\to\\your\\project\\client",
+      "cmd": "npm run dev",
+      "type": "service"
+    },
+    {
+      "name": "🗄 Database Studio",
+      "path": "C:\\path\\to\\your\\project\\server",
+      "cmd": "npx prisma studio",
+      "type": "service"
+    },
+    {
+      "name": "🦊 Browser",
+      "path": "C:\\Program Files\\Mozilla Firefox",
+      "cmd": "firefox.exe http://localhost:3000",
+      "type": "service"
+    },
+    {
+      "name": "🐚 Project root",
+      "path": "C:\\path\\to\\your\\project",
+      "cmd": "",
+      "type": "terminal"
+    },
+    {
+      "name": "🐚 Server shell",
+      "path": "C:\\path\\to\\your\\project\\server",
+      "cmd": "",
+      "type": "terminal"
+    },
+    {
+      "name": "🐚 Client shell",
+      "path": "C:\\path\\to\\your\\project\\client",
+      "cmd": "",
+      "type": "terminal"
+    }
+  ],
+
+  "ANOTHER_PROJECT": [
+    {
+      "name": "🐍 Python API",
+      "path": "D:\\code\\myapi",
+      "cmd": "python -m uvicorn main:app --reload",
+      "type": "service"
+    },
+    {
+      "name": "🐚 Shell",
+      "path": "D:\\code\\myapi",
+      "cmd": "",
+      "type": "terminal"
+    }
+  ]
+}
